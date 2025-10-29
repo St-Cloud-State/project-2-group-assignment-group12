@@ -1,0 +1,7 @@
+From ./
+
+To compile run:
+javac *.java 
+
+To run, run:
+java WarehouseDriver

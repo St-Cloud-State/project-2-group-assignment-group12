@@ -1,0 +1,1065 @@
+Script started on 2025-10-21 23:03:42+00:00 [TERM="xterm-256color" TTY="/dev/pts/2" COLUMNS="71" LINES="28"]
+[?2004h[0;32m@kygm [0m➜ [1;34m/workspaces/full-sample-code-for-project-1-kygm/Project1Final [0;36m([1;31mmain[0;36m) [0m$ javac *.java
+[?2004l[?2004h[0;32m@kygm [0m➜ [1;34m/workspaces/full-sample-code-for-project-1-kygm/Project1Final [0;36m([1;31mmain[0;36m) [0m$ java WarehoiuseD[K[K[K[K[KuseDriver
+[?2004l
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 1
+Enter client name: Ts est1
+Enter client address: 1 main street
+Client added successfully.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 1
+Enter client name: Test2
+Enter client address: 2 main street
+Client added successfully.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 1
+Enter client name: Test3
+Enter client address: 3 main street
+Client added successfully.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 1
+Enter client name: test4
+Enter client address: 4 main street
+Client added successfully.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 1
+Enter client name: test5  
+Enter client address: 5 main street
+Client added successfully.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 4
+=== Clients ===
+ID: C1, Name: Test1, Address: 1 main street, Balance: $0.00
+ID: C2, Name: Test2, Address: 2 main street, Balance: $0.00
+ID: C3, Name: Test3, Address: 3 main street, Balance: $0.00
+ID: C4, Name: test4, Address: 4 main street, Balance: $0.00
+ID: C5, Name: test5, Address: 5 main street, Balance: $0.00
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 2
+Enter product name: bl  bubblegum
+Enter product quantity: 10
+Enter product price: 1
+Product added successfully.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 2
+Enter product name: earing^[[1;5D        g^[[D^[[D^[[D                  left earing
+Enter product quantity: 20
+Enter product price: 2j 
+Product added successfully.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 2
+Enter product name: phone case
+Enter product quantity: 30
+Enter product price: 3
+Product added successfully.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 2
+Enter product name: keyboard
+Enter product quantity: 40
+Enter product price: 4
+Product added successfully.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 2
+Enter product name: book
+Enter product quantity: 50
+Enter product price: 5
+Product added successfully.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 5
+=== Products ===
+ID: P1, Name: bubblegum, Quantity: 10, Price: $1.0
+ID: P2, Name: left earing, Quantity: 20, Price: $2.0
+ID: P3, Name: phone case, Quantity: 30, Price: $3.0
+ID: P4, Name: keyboard, Quantity: 40, Price: $4.0
+ID: P5, Name: book, Quantity: 50, Price: $5.0
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 3
+Enter client ID: C1
+Enter product ID: P1
+Enter quantity: 5
+Wishlist item added.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 3
+Enter client ID: C1
+Enter product ID: P3
+Enter quantity: 5
+Wishlist item added.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 1 3
+Enter client ID: C1
+Enter product ID: P5
+Enter quantity: 5
+Wishlist item added.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 6
+Enter client ID: c C1
+=== Wishlist for Client C1 - Test1 ===
+Product ID: P1; Qty: 5
+ Product name: bubblegum; Product Price: $1.0
+Product ID: P3; Qty: 5
+ Product name: phone case; Product Price: $3.0
+Product ID: P5; Qty: 5
+ Product name: book; Product Price: $5.0
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 3
+Enter client ID: c2  C2
+Enter product ID: P1
+Enter quantity: 7
+Wishlist item added.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 3
+Enter client ID: C2
+Enter product ID: P2
+Enter quantity: 7
+Wishlist item added.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 3
+Enter client ID: C2
+Enter product ID: P4
+Enter quantity: 7
+Wishlist item added.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 3
+Enter client ID: C3
+Enter product ID: P1
+Enter quantity: 6
+Wishlist item added.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 3
+Enter client ID: C3
+Enter product ID: P2
+Enter quantity: 7
+Wishlist item added.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 3
+Enter client ID: C3
+Enter product ID: P5
+Enter quantity: 6
+Wishlist item added.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 6
+Enter client ID: C1
+=== Wishlist for Client C1 - Test1 ===
+Product ID: P1; Qty: 5
+ Product name: bubblegum; Product Price: $1.0
+Product ID: P3; Qty: 5
+ Product name: phone case; Product Price: $3.0
+Product ID: P5; Qty: 5
+ Product name: book; Product Price: $5.0
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: C 6
+Enter client ID: C2
+=== Wishlist for Client C2 - Test2 ===
+Product ID: P1; Qty: 7
+ Product name: bubblegum; Product Price: $1.0
+Product ID: P2; Qty: 7
+ Product name: left earing; Product Price: $2.0
+Product ID: P4; Qty: 7
+ Product name: keyboard; Product Price: $4.0
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 6
+Enter client ID: C3
+=== Wishlist for Client C3 - Test3 ===
+Product ID: P1; Qty: 6
+ Product name: bubblegum; Product Price: $1.0
+Product ID: P2; Qty: 7
+ Product name: left earing; Product Price: $2.0
+Product ID: P5; Qty: 6
+ Product name: book; Product Price: $5.0
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 7
+Enter client ID for checkout: C2
+Client Test2 charged $49.0. New balance: $49.0
+Transaction completed. Total: $49.0
+Checkout completed successfully.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 11
+=== TRANSACTIONS ===
+--------------------------------------------------
+Transaction ID: T1
+Client ID: C2
+Products: P1, P2, P4
+Total: $49.00
+Date: 2025-10-21 23:13:31
+--------------------------------------------------
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 4
+=== Clients ===
+ID: C1, Name: Test1, Address: 1 main street, Balance: $0.00
+ID: C2, Name: Test2, Address: 2 main street, Balance: $49.00
+ID: C3, Name: Test3, Address: 3 main street, Balance: $0.00
+ID: C4, Name: test4, Address: 4 main street, Balance: $0.00
+ID: C5, Name: test5, Address: 5 main street, Balance: $0.00
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 7
+Enter client ID for checkout: C3
+Partial stock for bubblegum. 3 purchased, 3 waitlisted.
+Client Test3 charged $47.0. New balance: $47.0
+Transaction completed. Total: $47.0
+Checkout completed successfully.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 6 4
+=== Clients ===
+ID: C1, Name: Test1, Address: 1 main street, Balance: $0.00
+ID: C2, Name: Test2, Address: 2 main street, Balance: $49.00
+ID: C3, Name: Test3, Address: 3 main street, Balance: $47.00
+ID: C4, Name: test4, Address: 4 main street, Balance: $0.00
+ID: C5, Name: test5, Address: 5 main street, Balance: $0.00
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 9
+=== WAITLIST ===
+Client ID: C3, Product ID: P1, Quantity: 3
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 3
+Enter client ID: C2
+Enter product ID: 
+Enter quantity: 
+Garbage input, try again: 0
+Failed to add wishlist item.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 6
+Enter client ID: c C2
+=== Wishlist for Client C2 - Test2 ===
+No items in wishlist.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 6
+Enter client ID: C3
+=== Wishlist for Client C3 - Test3 ===
+No items in wishlist.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 6
+Enter client ID: C1
+=== Wishlist for Client C1 - Test1 ===
+Product ID: P1; Qty: 5
+ Product name: bubblegum; Product Price: $1.0
+Product ID: P3; Qty: 5
+ Product name: phone case; Product Price: $3.0
+Product ID: P5; Qty: 5
+ Product name: book; Product Price: $5.0
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 9
+=== WAITLIST ===
+Client ID: C3, Product ID: P1, Quantity: 3
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 7
+Enter client ID for checkout: c C1
+Product bubblegum out of stock. Added to waitlist.
+Client Test1 charged $40.0. New balance: $40.0
+Transaction completed. Total: $40.0
+Checkout completed successfully.
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 4
+=== Clients ===
+ID: C1, Name: Test1, Address: 1 main street, Balance: $40.00
+ID: C2, Name: Test2, Address: 2 main street, Balance: $49.00
+ID: C3, Name: Test3, Address: 3 main street, Balance: $47.00
+ID: C4, Name: test4, Address: 4 main street, Balance: $0.00
+ID: C5, Name: test5, Address: 5 main street, Balance: $0.00
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 9
+=== WAITLIST ===
+Client ID: C3, Product ID: P1, Quantity: 3
+Client ID: C1, Product ID: P1, Quantity: 5
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 10
+Enter client ID: C1
+Enter payment amount: 100
+Payment of $100.0 recorded for Test1. New balance: $-60.0
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 10
+Enter client ID: C2
+Enter payment amount: 100
+Payment of $100.0 recorded for Test2. New balance: $-51.0
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 4
+=== Clients ===
+ID: C1, Name: Test1, Address: 1 main street, Balance: $-60.00
+ID: C2, Name: Test2, Address: 2 main street, Balance: $-51.00
+ID: C3, Name: Test3, Address: 3 main street, Balance: $47.00
+ID: C4, Name: test4, Address: 4 main street, Balance: $0.00
+ID: C5, Name: test5, Address: 5 main street, Balance: $0.00
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 8
+Enter product ID: P1
+Enter quantity received: 100
+Shipment received for bubblegum. Stock increased from 0 to 100.
+Attempting to fulfill waitlist for product bubblegum (available: 100).
+Fulfilling waitlist for client C3 (Test3): 3 units of bubblegum
+Fulfilling waitlist for client C1 (Test1): 5 units of bubblegum
+Waitlist fulfillment complete. Remaining stock: 92
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 5
+=== Products ===
+ID: P1, Name: bubblegum, Quantity: 92, Price: $1.0
+ID: P2, Name: left earing, Quantity: 6, Price: $2.0
+ID: P3, Name: phone case, Quantity: 25, Price: $3.0
+ID: P4, Name: keyboard, Quantity: 33, Price: $4.0
+ID: P5, Name: book, Quantity: 39, Price: $5.0
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 4
+=== Clients ===
+ID: C1, Name: Test1, Address: 1 main street, Balance: $-60.00
+ID: C2, Name: Test2, Address: 2 main street, Balance: $-51.00
+ID: C3, Name: Test3, Address: 3 main street, Balance: $47.00
+ID: C4, Name: test4, Address: 4 main street, Balance: $0.00
+ID: C5, Name: test5, Address: 5 main street, Balance: $0.00
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 11  12
+Enter client ID: C1
+=== Transactions for Client C1 ===
+--------------------------------------------------
+Transaction ID: T3
+Client ID: C1
+Products: P3, P5
+Total: $40.00
+Date: 2025-10-21 23:17:03
+--------------------------------------------------
+--------------------------------------------------
+Transaction ID: T5
+Client ID: C1
+Products: P1
+Total: $5.00
+Date: 2025-10-21 23:18:56
+--------------------------------------------------
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 12
+Enter client ID: C2
+=== Transactions for Client C2 ===
+--------------------------------------------------
+Transaction ID: T1
+Client ID: C2
+Products: P1, P2, P4
+Total: $49.00
+Date: 2025-10-21 23:13:31
+--------------------------------------------------
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 11
+=== TRANSACTIONS ===
+--------------------------------------------------
+Transaction ID: T1
+Client ID: C2
+Products: P1, P2, P4
+Total: $49.00
+Date: 2025-10-21 23:13:31
+--------------------------------------------------
+--------------------------------------------------
+Transaction ID: T2
+Client ID: C3
+Products: P1, P2, P5
+Total: $47.00
+Date: 2025-10-21 23:14:12
+--------------------------------------------------
+--------------------------------------------------
+Transaction ID: T3
+Client ID: C1
+Products: P3, P5
+Total: $40.00
+Date: 2025-10-21 23:17:03
+--------------------------------------------------
+--------------------------------------------------
+Transaction ID: T4
+Client ID: C3
+Products: P1
+Total: $3.00
+Date: 2025-10-21 23:18:56
+--------------------------------------------------
+--------------------------------------------------
+Transaction ID: T5
+Client ID: C1
+Products: P1
+Total: $5.00
+Date: 2025-10-21 23:18:56
+--------------------------------------------------
+
+==== WAREHOUSE MENU ====
+1. Add Client
+2. Add Product
+3. Add Item to Client Wishlist
+4. Display All Clients
+5. Display All Products
+6. Display Client Wishlist
+7. Checkout Client
+8. Receive Shipment
+9. Display Waitlist
+10. Record Payment
+11. Display All Transactions
+12. Display Transactions for Client
+0. Exit
+Select an option: 0
+Exiting Warehouse System. Goodbye!
+[?2004h[0;32m@kygm [0m➜ [1;34m/workspaces/full-sample-code-for-project-1-kygm/Project1Final [0;36m([1;31mmain[0;36m) [0m$ ex[K[Kexit
+[?2004lexit
+
+Script done on 2025-10-21 23:23:04+00:00 [COMMAND_EXIT_CODE="0"]

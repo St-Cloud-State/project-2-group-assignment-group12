@@ -1,0 +1,115 @@
+Client
+-name: String
+-address: String
+-id: String
+-wishlist: Wishlist
+-balance: double
+-clientCounter: static int
++Client(name: String, address: String): Client
++addToWishlist(product: Product, qty: int): void
++getWishlist(): Wishlist
++getBalance(): double
++setBalance(balance: double): void
++getName(): String
++getAddress(): String
++getId(): String
+
+
+ClientList
+-clients: ArrayList<Client>
++ClientList(): ClientList
++addClient(client: Client): boolean
++getClient(clientId: String): Client
++displayAllClients(): void
++getClientIds(): String[]
+
+Product
+-name: String
+-quantity: int
+-price: double
+-id: String
+-productCounter: static int
++Product(name: String, quantity: int, price: double): Product
++getName(): String
++getId(): String
++getPrice(): double
++getQuantity(): int
++setName(name: String): void
++setQuantity(quantity: int): void
++setPrice(price: double): void
++toString(): String
+
+ProductList
+-products: ArrayList<Product>
++ProductList(): ProductList
++addProduct(product: Product): void
++removeProduct(product: Product): void
++searchProductById(id: String): Product
++getQtyById(productId: String): int
++getProductById(productId: String): Product
++setQtyById(productId: String, qty: int): void
++getProducts(): ArrayList<Product>
++isEmpty(): boolean
++displayAllProducts(): void
+
+Transaction
+-clientId: String
+-products: List<String>
+-totalPrice: double
++Transaction(clientId: String, products: List<String>, totalPrice: double): Transaction
++getClientId(): String
++getProducts(): List<String>
++getTotalPrice(): double
+
+TransactionList
+-transactions: List<Transaction>
++TransactionList(): TransactionList
++addTransaction(transaction: Transaction): boolean
++getTransactionsByClientId(clientId: String): List<Transaction>
++getAllTransactions(): List<Transaction>
+
+Waitlist
+-waitlistItems: List<WaitlistItem>
++Waitlist(): Waitlist
++addToWaitlist(waitlistItem: WaitlistItem): boolean
++getWaitlistForClient(clientId: String): List<WaitlistItem>
++completeProduct(waitlistItem: WaitlistItem, warehouseBL: WarehouseBL): int
+
+WaitlistItem
+-productId: String
+-quantity: int
+-clientId: String
++WaitlistItem(productId: String, quantity: int): WaitlistItem
++WaitlistItem(productId: String, quantity: int, clientId: String): WaitlistItem
++getProductId(): String
++getQuantity(): int
++getClientId(): String
++setQuantity(quantity: int): void
++setClientId(clientId: String): void
++toString(): String
+
+
+Wishlist
+-wishlistItems: List<WishlistItem>
+-clientId: String
++Wishlist(): Wishlist
++Wishlist(clientId: String): Wishlist
++addWishlistItem(wishlistItem: WishlistItem): boolean
++removeWishlistItem(product: Product): boolean
++getWishlistItems(): List<WishlistItem>
++setWishList(wishlistItems: List<WishlistItem>): void
++getClientId(): String
++clear(): void
++displayAllWishlistItems(): void
+
+WishlistItem
+-productId: String
+-quantity: int
++WishlistItem(productId: String, quantity: int): WishlistItem
++getProductId(): String
++getQuantity(): int
++setQuantity(quantity: int): void
++toString(): String
+
+
+
