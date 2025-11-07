@@ -53,9 +53,12 @@ public class WarehouseContext {
         nextState[LOGIN_STATE][3] = -1; // exit
 
         // Manager transitions
-        nextState[MANAGER_STATE][0] = LOGIN_STATE;
-        nextState[MANAGER_STATE][1] = -1; // exit
-        nextState[MANAGER_STATE][2] = -2; // error
+        nextState[MANAGER_STATE][0] = LOGIN_STATE;   // Logout -> Login
+        nextState[MANAGER_STATE][1] = CLERK_STATE;   // Become Clerk
+        nextState[MANAGER_STATE][2] = -2;            // Error
+        nextState[MANAGER_STATE][3] = -1;            // Exit
+
+
 
         currentState = LOGIN_STATE;
     }
@@ -122,11 +125,13 @@ public class WarehouseContext {
     }
 
     public void process() {
+    while (true) {
         states[currentState].run();
+    }
     }
 
     public static void main(String[] args) {
         WarehouseContext.instance().process();
-        states[currentState].run();
+      
     }
 }
