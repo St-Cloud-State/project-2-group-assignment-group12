@@ -102,7 +102,7 @@ public class ClerkMenuState extends BaseState {
 
         if (client != null) {
             context.setClientID(clientId);
-            System.out.println("NOW ACTING AS CLIENT: " + client.getName());
+            System.out.println("Becoming Client " + client.getName());
             context.changeState(WarehouseContext.CLIENT_STATE);
         } else {
             System.out.println("Invalid client ID.");
