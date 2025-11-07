@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class ManagerMenuState extends BaseState {
     private static ManagerMenuState instance;
 
@@ -15,60 +13,71 @@ public class ManagerMenuState extends BaseState {
     public void run() {
         WarehouseContext context = WarehouseContext.instance();
         WarehouseBL warehouse = context.getWarehouse();
-        Scanner scanner = new Scanner(System.in);
-        int option;
+        int option = -1;
 
         do {
-            System.out.println("\n MANAGER MENU ");
+            System.out.println("\nMANAGER MENU");
             System.out.println("1. Add Product");
             System.out.println("2. Display Waitlist");
             System.out.println("3. Receive Shipment");
             System.out.println("4. Become Clerk");
             System.out.println("5. Logout");
-            System.out.print("Enter option: ");
 
-            while (!scanner.hasNextInt()) {
-                System.out.print("Please enter a number: ");
-                scanner.next();
+            try {
+                String input = context.getToken("Enter option: ");
+                option = Integer.parseInt(input);
+            } catch (NumberFormatException e) {
+                System.out.println("Invalid input. Please enter a number.");
+                continue;
             }
-
-            option = scanner.nextInt();
-            scanner.nextLine(); // consume newline
 
             switch (option) {
                 case 1:
-                    addProduct(scanner, warehouse);
+                    addProduct(context, warehouse);
                     break;
                 case 2:
                     displayWaitlist(warehouse);
                     break;
                 case 3:
-                    receiveShipment(scanner, warehouse);
+                    receiveShipment(context, warehouse);
                     break;
                 case 4:
                     becomeClerk(context);
-                    break;
+                    return; // switch state
                 case 5:
                     logout(context);
-                    break;
+                    return; // switch state
                 default:
                     System.out.println("Invalid option. Try again.");
             }
-        } while (option != 5);
+        } while (true);
     }
 
     //Manager Operations
 
-    private void addProduct(Scanner scanner, WarehouseBL warehouse) {
-        System.out.println("\nAdd New Product ");
-        System.out.print("Enter product name: ");
-        String name = scanner.nextLine();
+    private void addProduct(WarehouseContext context, WarehouseBL warehouse) {
+        System.out.println("\nAdd New Product");
+        String name = context.getToken("Enter product name: ");
 
-        System.out.print("Enter quantity: ");
-        int quantity = readInt(scanner);
+        int quantity;
+        while (true) {
+            try {
+                quantity = Integer.parseInt(context.getToken("Enter quantity: "));
+                break;
+            } catch (NumberFormatException e) {
+                System.out.println("Please enter a valid integer for quantity.");
+            }
+        }
 
-        System.out.print("Enter unit price: ");
-        double price = readDouble(scanner);
+        double price;
+        while (true) {
+            try {
+                price = Double.parseDouble(context.getToken("Enter unit price: "));
+                break;
+            } catch (NumberFormatException e) {
+                System.out.println("Please enter a valid number for price.");
+            }
+        }
 
         boolean success = warehouse.addProduct(name, quantity, price);
         if (success) {
@@ -79,17 +88,23 @@ public class ManagerMenuState extends BaseState {
     }
 
     private void displayWaitlist(WarehouseBL warehouse) {
-        System.out.println("\nDisplay Waitlist ");
+        System.out.println("\nDisplay Waitlist");
         warehouse.displayWaitlist();
     }
 
-    private void receiveShipment(Scanner scanner, WarehouseBL warehouse) {
-        System.out.println("\nReceive Shipment ");
-        System.out.print("Enter product ID: ");
-        String productId = scanner.nextLine();
+    private void receiveShipment(WarehouseContext context, WarehouseBL warehouse) {
+        System.out.println("\nReceive Shipment");
+        String productId = context.getToken("Enter product ID: ");
 
-        System.out.print("Enter quantity received: ");
-        int qtyReceived = readInt(scanner);
+        int qtyReceived;
+        while (true) {
+            try {
+                qtyReceived = Integer.parseInt(context.getToken("Enter quantity received: "));
+                break;
+            } catch (NumberFormatException e) {
+                System.out.println("Please enter a valid integer for quantity.");
+            }
+        }
 
         warehouse.receiveShipment(productId, qtyReceived);
     }
@@ -100,26 +115,7 @@ public class ManagerMenuState extends BaseState {
     }
 
     private void logout(WarehouseContext context) {
-    System.out.println("\nLogging out to Login Menu...");
-    context.changeState(0); // 0 corresponds to LOGIN_STATE transition
-    }
-
-
-    //Utility input methods 
-
-    private int readInt(Scanner scanner) {
-        while (!scanner.hasNextInt()) {
-            System.out.print("Please enter a valid integer: ");
-            scanner.next();
-        }
-        return scanner.nextInt();
-    }
-
-    private double readDouble(Scanner scanner) {
-        while (!scanner.hasNextDouble()) {
-            System.out.print("Please enter a valid number: ");
-            scanner.next();
-        }
-        return scanner.nextDouble();
+        System.out.println("\nLogging out to Login Menu...");
+        context.changeState(WarehouseContext.LOGIN_STATE);
     }
 }
