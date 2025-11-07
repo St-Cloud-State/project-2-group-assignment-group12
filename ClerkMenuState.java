@@ -84,7 +84,7 @@ public class ClerkMenuState extends BaseState {
         if (warehouse.getClientById(clientId) != null) {
             context.setClientID(clientId);
             System.out.println("Becoming Client " + clientId);
-            context.changeState(WarehouseContext.CLIENT_STATE);
+            context.changeState(1);
         } else {
             System.out.println("Invalid client ID");
         }
@@ -92,7 +92,7 @@ public class ClerkMenuState extends BaseState {
 
     private void Logout(WarehouseContext context) {
         System.out.println("Logging out");
-        context.changeState(WarehouseContext.LOGIN_STATE);
+        context.changeState(0);
     }
 
     private double readDouble(WarehouseContext context, String prompt) {
