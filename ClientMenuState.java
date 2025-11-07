@@ -25,7 +25,7 @@ public class ClientMenuState extends BaseState {
             System.out.println("4. Add Item to Wishlist");
             System.out.println("5. Display Wishlist");
             System.out.println("6. Place Order");
-            System.out.println("7. Logout");
+            System.out.println("0. Logout");
 
             try 
             {
@@ -64,7 +64,7 @@ public class ClientMenuState extends BaseState {
                     placeOrder(warehouse, clientId);
                     break;
 
-                case 7:
+                case 0:
                     logout(context);
                     return;
 
@@ -155,7 +155,7 @@ public class ClientMenuState extends BaseState {
         }
     }
 
-    // Option 7
+    // Option 0
     private void logout(WarehouseContext context) 
     {
         System.out.println("\nLogging out...");
