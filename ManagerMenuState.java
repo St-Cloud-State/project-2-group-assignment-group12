@@ -1,7 +1,8 @@
 public class ManagerMenuState extends BaseState {
     private static ManagerMenuState instance;
 
-    private ManagerMenuState() { }
+    private ManagerMenuState() {
+    }
 
     public static ManagerMenuState instance() {
         if (instance == null)
@@ -53,7 +54,7 @@ public class ManagerMenuState extends BaseState {
         } while (true);
     }
 
-    //Manager Operations
+    // Manager Operations
 
     private void addProduct(WarehouseContext context, WarehouseBL warehouse) {
         System.out.println("\nAdd New Product");
@@ -111,11 +112,11 @@ public class ManagerMenuState extends BaseState {
 
     private void becomeClerk(WarehouseContext context) {
         System.out.println("\nSwitching to Clerk Menu...");
-        context.changeState(WarehouseContext.CLERK_STATE);
+        context.changeState(1);
     }
 
     private void logout(WarehouseContext context) {
         System.out.println("\nLogging out to Login Menu...");
-        context.changeState(WarehouseContext.LOGIN_STATE);
+        context.changeState(0);
     }
 }
