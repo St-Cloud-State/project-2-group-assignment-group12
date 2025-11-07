@@ -27,15 +27,19 @@ public class ClientMenuState extends BaseState {
             System.out.println("6. Place Order");
             System.out.println("7. Logout");
 
-            try {
+            try 
+            {
                 String input = context.getToken("Enter option: ");
                 option = Integer.parseInt(input);
-            } catch (NumberFormatException e) {
+            }
+            catch (NumberFormatException e)
+            {
                 System.out.println("Invalid input. Please enter a number.");
                 continue;
             }
 
-            switch (option) {
+            switch (option) 
+            {
                 case 1:
                     showClientDetails(warehouse, clientId);
                     break;
@@ -67,13 +71,16 @@ public class ClientMenuState extends BaseState {
                 default:
                     System.out.println("Invalid option. Try again.");
             }
-        } while (true);
+        } 
+        while (true);
     }
 
     // Option 1
-    private void showClientDetails(WarehouseBL warehouse, String clientId) {
+    private void showClientDetails(WarehouseBL warehouse, String clientId) 
+    {
         Client client = warehouse.getClientById(clientId);
-        if (client == null) {
+        if (client == null) 
+        {
             System.out.println("Client not found.");
             return;
         }
@@ -82,66 +89,85 @@ public class ClientMenuState extends BaseState {
     }
 
     // Option 2
-    private void showProducts(WarehouseBL warehouse) {
+    private void showProducts(WarehouseBL warehouse) 
+    {
         System.out.println("\nAVAILABLE PRODUCTS");
         warehouse.displayProducts();
     }
 
     // Option 3
-    private void showClientTransactions(WarehouseBL warehouse, String clientId) {
+    private void showClientTransactions(WarehouseBL warehouse, String clientId) 
+    {
         System.out.println("\nCLIENT TRANSACTIONS");
         warehouse.displayTransactionsForClient(clientId);
     }
 
     // Option 4
-    private void addItemToWishlist(WarehouseContext context, WarehouseBL warehouse, String clientId) {
+    private void addItemToWishlist(WarehouseContext context, WarehouseBL warehouse, String clientId) 
+    {
         System.out.println("\nAdd Item to Wishlist");
         String productId = context.getToken("Enter Product ID: ");
 
         int quantity;
-        while (true) {
-            try {
+        while (true) 
+        {
+            try 
+            {
                 quantity = Integer.parseInt(context.getToken("Enter quantity: "));
                 break;
-            } catch (NumberFormatException e) {
+            } 
+            catch (NumberFormatException e) 
+            {
                 System.out.println("Please enter a valid integer for quantity.");
             }
         }
 
         boolean success = warehouse.addItemToWishlist(clientId, productId, quantity);
-        if (success) {
+        if (success) 
+        {
             System.out.println("Item added to wishlist successfully.");
-        } else {
+        } 
+        else 
+        {
             System.out.println("Failed to add item. Check Product ID and Quantity.");
         }
     }
 
     // Option 5
-    private void displayWishlist(WarehouseBL warehouse, String clientId) {
+    private void displayWishlist(WarehouseBL warehouse, String clientId) 
+    {
         System.out.println("\nCLIENT WISHLIST");
         warehouse.displayWishlist(clientId);
     }
 
     // Option 6
-    private void placeOrder(WarehouseBL warehouse, String clientId) {
+    private void placeOrder(WarehouseBL warehouse, String clientId) 
+    {
         System.out.println("\nPlacing Order...");
         boolean success = warehouse.checkout(clientId);
-        if (success) {
+        if (success) 
+        {
             System.out.println("Order placed successfully.");
-        } else {
+        } 
+        else 
+        {
             System.out.println("Order could not be completed.");
         }
     }
 
     // Option 7
-    private void logout(WarehouseContext context) {
+    private void logout(WarehouseContext context) 
+    {
         System.out.println("\nLogging out...");
         // return to previous (clerk or login)
         int previousLogin = context.getLogin();
-        if (previousLogin == WarehouseContext.CLERK_STATE) {
+        if (previousLogin == WarehouseContext.CLERK_STATE) 
+        {
             System.out.println("Returning to Clerk Menu...");
             context.changeState(WarehouseContext.CLERK_STATE);
-        } else {
+        } 
+        else 
+        {
             System.out.println("Returning to Login Menu...");
             context.changeState(WarehouseContext.LOGIN_STATE);
         }
