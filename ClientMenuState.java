@@ -158,20 +158,19 @@ public class ClientMenuState extends BaseState {
     // Option 7
     private void logout(WarehouseContext context) 
     {
-    System.out.println("\nLogging out...");
+        System.out.println("\nLogging out...");
 
-    int previousLogin = context.getLogin();
+        int previousLogin = context.getLogin();
 
-    if (previousLogin == WarehouseContext.CLERK_STATE)
-    {
-        System.out.println("Returning to Clerk Menu...");
-        context.changeState(1);
-    } 
-    else 
-    {
-        System.out.println("Returning to Login Menu...");
-        context.changeState(0);
+        if (previousLogin == WarehouseContext.CLERK_STATE)
+        {
+            System.out.println("Returning to Clerk Menu...");
+            context.changeState(1);
+        } 
+        else 
+        {
+            System.out.println("Returning to Login Menu...");
+            context.changeState(0);
+        }
     }
-}
-
 }
