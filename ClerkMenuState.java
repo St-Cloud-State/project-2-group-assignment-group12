@@ -2,7 +2,7 @@ public class ClerkMenuState extends BaseState {
     private static ClerkMenuState instance;
 
     private ClerkMenuState() {
-       
+
     }
 
     public static ClerkMenuState instance() {
@@ -15,7 +15,7 @@ public class ClerkMenuState extends BaseState {
     @Override
     public void run() {
         WarehouseContext context = WarehouseContext.instance();
-        WarehouseBL warehouse = context.getWarehouse(); /
+        WarehouseBL warehouse = context.getWarehouse();
 
         boolean exit = false;
         while (!exit) {
@@ -23,14 +23,31 @@ public class ClerkMenuState extends BaseState {
             String choice = context.getToken("Enter option: ").trim();
 
             switch (choice) {
-                case "1": addAClient(context, warehouse); break;
-                case "2": revealProductList(warehouse); break;
-                case "3": showALLclient(warehouse); break;
-                case "4": ClientsWOBalance(warehouse); break;
-                case "5": RecordPayment(context, warehouse); break;
-                case "6": BeClient(context, warehouse); break;
-                case "0": exit = true; Logout(context); break;
-                default: System.out.println("Invalid choice"); break;
+                case "1":
+                    addAClient(context, warehouse);
+                    break;
+                case "2":
+                    revealProductList(warehouse);
+                    break;
+                case "3":
+                    showALLclient(warehouse);
+                    break;
+                case "4":
+                    ClientsWOBalance(warehouse);
+                    break;
+                case "5":
+                    RecordPayment(context, warehouse);
+                    break;
+                case "6":
+                    BeClient(context, warehouse);
+                    break;
+                case "0":
+                    exit = true;
+                    Logout(context);
+                    break;
+                default:
+                    System.out.println("Invalid choice");
+                    break;
             }
         }
     }
@@ -53,7 +70,7 @@ public class ClerkMenuState extends BaseState {
 
     private void ClientsWOBalance(WarehouseBL warehouse) {
         System.out.println("\nClients with outstanding balances:");
-        warehouse.displayClients(); 
+        warehouse.displayClients();
     }
 
     private void RecordPayment(WarehouseContext context, WarehouseBL warehouse) {
