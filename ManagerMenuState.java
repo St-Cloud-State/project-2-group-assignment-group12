@@ -22,7 +22,7 @@ public class ManagerMenuState extends BaseState {
             System.out.println("2. Display Waitlist");
             System.out.println("3. Receive Shipment");
             System.out.println("4. Become Clerk");
-            System.out.println("5. Logout");
+            System.out.println("0. Logout");
 
             try {
                 String input = context.getToken("Enter option: ");
@@ -45,7 +45,7 @@ public class ManagerMenuState extends BaseState {
                 case 4:
                     becomeClerk(context);
                     return; // switch state
-                case 5:
+                case 0:
                     logout(context);
                     return; // switch state
                 default:
